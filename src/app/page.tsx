@@ -21,7 +21,7 @@ export default function Page() {
     <main className="relative min-h-screen">
       {/* Animated Gradient Background */}
       <div className="fixed inset-0 -z-10">
-        <AnimatedGradientBackground 
+        <AnimatedGradientBackground
           Breathing={true}
           startingGap={110}
           breathingRange={10}
@@ -40,7 +40,7 @@ export default function Page() {
         />
       </div>
       <NavBar items={navItems} />
-      
+
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex flex-col items-center justify-center px-6 relative">
         <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white pb-1">
@@ -50,18 +50,18 @@ export default function Page() {
           Turning AI into real-world impact, one project at a time
         </p>
         <div className="flex justify-center gap-6 z-50">
-          <a 
-            href="https://github.com/NihaallX" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://github.com/NihaallX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-primary/50 transition-all hover:scale-110 cursor-pointer"
           >
             <i className="fab fa-github text-2xl text-white pointer-events-none"></i>
           </a>
-          <a 
-            href="https://linkedin.com/in/nihalpardeshi" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://linkedin.com/in/nihalpardeshi"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-primary/50 transition-all hover:scale-110 cursor-pointer"
           >
             <i className="fab fa-linkedin text-2xl text-white pointer-events-none"></i>
@@ -80,7 +80,7 @@ export default function Page() {
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all" />
               <User className="w-12 h-12 mb-6 text-primary" />
               <p className="text-lg mb-6 leading-relaxed text-foreground/80">
-                AI/ML undergrad passionate about bridging the gap between cutting-edge research and practical applications. 
+                AI/ML undergrad passionate about bridging the gap between cutting-edge research and practical applications.
                 I specialize in building intelligent systems that solve real-world problems while maintaining ethical considerations at the forefront.
               </p>
               <p className="text-lg leading-relaxed text-foreground/80">
@@ -192,7 +192,7 @@ export default function Page() {
               href="https://moodifyxd.vercel.app/"
               cta="Try Moodify"
             />
-            
+
             <BentoCard
               name="DateHelp"
               className="lg:row-start-3 lg:row-end-5 lg:col-start-2 lg:col-end-3"
@@ -226,7 +226,7 @@ export default function Page() {
               href="https://colab.research.google.com/drive/10MwwDrCOMGuci2qFceiMm-m66q842KVz"
               cta="View Details"
             />
-            
+
             <BentoCard
               name="CartPole RL Agent"
               className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5"
@@ -243,10 +243,10 @@ export default function Page() {
               href="https://github.com/NihaallX/Reinforcement-Learning"
               cta="View Code"
             />
-            
+
             <BentoCard
               name="RateMyProf India"
-              className="lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-5"
+              className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5"
               background={
                 <Image
                   src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=800&fit=crop"
