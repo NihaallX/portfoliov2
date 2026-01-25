@@ -76,13 +76,14 @@ const BentoCard = ({
         "pointer-events-auto absolute bottom-0 flex w-full flex-row items-center p-6 z-20",
       )}
     >
-      <Button variant="ghost" asChild size="sm" className="bg-white/90 hover:bg-white text-black font-semibold backdrop-blur-sm shadow-lg">
-        <a href={href} target="_blank" rel="noopener noreferrer">
+      <Button variant="ghost" asChild size="sm" className="bg-white/90 hover:bg-white text-black font-semibold backdrop-blur-sm shadow-lg pointer-events-none">
+        <span className="pointer-events-none">
           {cta}
           <ArrowRightIcon className="ml-2 h-4 w-4" />
-        </a>
+        </span>
       </Button>
     </div>
+    <a href={href} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30 block" aria-label={`View ${name}`} />
     <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
   </div>
 );
