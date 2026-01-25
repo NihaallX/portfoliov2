@@ -46,7 +46,7 @@ export default function Page() {
         <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white pb-1">
           Nihal Pardeshi
         </h1>
-        <p className="text-xl md:text-2xl text-foreground/70 mb-8 font-light">
+        <p className="text-xl md:text-2xl text-white/80 mb-8 font-light">
           Turning AI into real-world impact, one project at a time
         </p>
         <div className="flex justify-center gap-6 z-50">
