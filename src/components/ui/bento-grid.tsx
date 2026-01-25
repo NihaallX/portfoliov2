@@ -83,7 +83,7 @@ const BentoCard = ({
         </span>
       </Button>
     </div>
-    <a href={href} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30 block" aria-label={`View ${name}`} />
+    <a href={href} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-50 block cursor-pointer" aria-label={`View ${name}`} />
     <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
   </div>
 );
