@@ -59,7 +59,7 @@ export default function Page() {
             <i className="fab fa-github text-2xl text-white pointer-events-none"></i>
           </a>
           <a
-            href="https://linkedin.com/in/nihalpardeshi"
+            href="https://www.linkedin.com/in/nihaallp/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-primary/50 transition-all hover:scale-110 cursor-pointer"
