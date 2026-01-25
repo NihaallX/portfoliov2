@@ -73,35 +73,33 @@ export default function Page() {
       <section id="about" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">About Me</h2>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">About Me</h2>
           <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto text-lg">Building the future of AI, one algorithm at a time</p>
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            <div className="grid md:grid-cols-2 gap-8 items-stretch">
-              <div className="group relative bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-                <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all" />
-                <User className="w-12 h-12 mb-6 text-primary" />
-                <p className="text-lg mb-6 leading-relaxed text-foreground/80">
-                  AI/ML undergrad passionate about bridging the gap between cutting-edge research and practical applications.
-                  I specialize in building intelligent systems that solve real-world problems while maintaining ethical considerations at the forefront.
-                </p>
-                <p className="text-lg leading-relaxed text-foreground/80">
-                  When I'm not training models, you'll find me exploring new architectures, contributing to open-source projects, or mentoring aspiring ML engineers.
-                </p>
-              </div>
-              <div className="group relative bg-gradient-to-br from-primary/10 via-card/50 to-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 flex items-center justify-center hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20">
-                <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all" />
-                <div className="text-center relative z-10">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center rotate-6 group-hover:rotate-12 transition-transform">
-                    <Heart className="w-10 h-10 text-white" fill="currentColor" />
-                  </div>
-                  <p className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">AI Philosophy</p>
-                  <p className="text-xl italic text-foreground/80">"AI should lessen the load, not increase it."</p>
+            <div className="group relative bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
+              <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all" />
+              <User className="w-12 h-12 mb-6 text-primary" />
+              <p className="text-lg mb-6 leading-relaxed text-foreground/80">
+                AI/ML undergrad passionate about bridging the gap between cutting-edge research and practical applications.
+                I specialize in building intelligent systems that solve real-world problems while maintaining ethical considerations at the forefront.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/80">
+                When I'm not training models, you'll find me exploring new architectures, contributing to open-source projects, or mentoring aspiring ML engineers.
+              </p>
+            </div>
+            <div className="group relative bg-gradient-to-br from-primary/10 via-card/50 to-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 flex items-center justify-center hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20">
+              <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all" />
+              <div className="text-center relative z-10">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center rotate-6 group-hover:rotate-12 transition-transform">
+                  <Heart className="w-10 h-10 text-white" fill="currentColor" />
                 </div>
+                <p className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">AI Philosophy</p>
+                <p className="text-xl italic text-foreground/80">"AI should lessen the load, not increase it."</p>
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Experience Section */}
@@ -176,95 +174,93 @@ export default function Page() {
       <section id="projects" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">Projects</h2>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">Projects</h2>
           <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto text-lg">Transforming ideas into intelligent solutions</p>
           <BentoGrid className="lg:grid-rows-4">
-            <BentoGrid className="lg:grid-rows-4">
-              <BentoCard
-                name="Moodify"
-                className="lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:col-end-3"
-                background={
-                  <Image
-                    src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&h=800&fit=crop"
-                    alt="Music streaming interface"
-                    fill
-                    className="absolute inset-0 object-cover opacity-60"
-                  />
-                }
-                Icon={Music}
-                description="Affective computing music recommendation system with mood detection and chat interface using React.js, Hugging Face, and Spotify API."
-                href="https://moodifyxd.vercel.app/"
-                cta="Try Moodify"
-              />
+            <BentoCard
+              name="Moodify"
+              className="lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:col-end-3"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&h=800&fit=crop"
+                  alt="Music streaming interface"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={Music}
+              description="Affective computing music recommendation system with mood detection and chat interface using React.js, Hugging Face, and Spotify API."
+              href="https://moodifyxd.vercel.app/"
+              cta="Try Moodify"
+            />
 
-              <BentoCard
-                name="DateHelp"
-                className="lg:row-start-3 lg:row-end-5 lg:col-start-2 lg:col-end-3"
-                background={
-                  <Image
-                    src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=800&fit=crop"
-                    alt="Dating app interface"
-                    fill
-                    className="absolute inset-0 object-cover opacity-60"
-                  />
-                }
-                Icon={Heart}
-                description="AI-powered dating profile optimization tool. Get data-driven insights to improve your matches."
-                href="https://datehelp.tech"
-                cta="View Details"
-              />
+            <BentoCard
+              name="DateHelp"
+              className="lg:row-start-3 lg:row-end-5 lg:col-start-2 lg:col-end-3"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=800&fit=crop"
+                  alt="Dating app interface"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={Heart}
+              description="AI-powered dating profile optimization tool. Get data-driven insights to improve your matches."
+              href="https://datehelp.tech"
+              cta="View Details"
+            />
 
-              <BentoCard
-                name="HouseGPT"
-                className="lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
-                background={
-                  <Image
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=800&fit=crop"
-                    alt="Medical AI interface"
-                    fill
-                    className="absolute inset-0 object-cover opacity-60"
-                  />
-                }
-                Icon={MessageSquare}
-                description="Sarcastic Voice AI Chatbot using Flan-T5-Large, LoRA, RAG, and custom datasets. Currently under active development."
-                href="https://colab.research.google.com/drive/10MwwDrCOMGuci2qFceiMm-m66q842KVz"
-                cta="View Details"
-              />
+            <BentoCard
+              name="HouseGPT"
+              className="lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=800&fit=crop"
+                  alt="Medical AI interface"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={MessageSquare}
+              description="Sarcastic Voice AI Chatbot using Flan-T5-Large, LoRA, RAG, and custom datasets. Currently under active development."
+              href="https://colab.research.google.com/drive/10MwwDrCOMGuci2qFceiMm-m66q842KVz"
+              cta="View Details"
+            />
 
-              <BentoCard
-                name="CartPole RL Agent"
-                className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5"
-                background={
-                  <Image
-                    src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=800&fit=crop"
-                    alt="Reinforcement learning visualization"
-                    fill
-                    className="absolute inset-0 object-cover opacity-60"
-                  />
-                }
-                Icon={TrendingUp}
-                description="DQN agent for CartPole-v1 with modular pipeline and reward visualization using Stable-Baselines3, Gymnasium, and PyTorch."
-                href="https://github.com/NihaallX/Reinforcement-Learning"
-                cta="View Code"
-              />
+            <BentoCard
+              name="CartPole RL Agent"
+              className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=800&fit=crop"
+                  alt="Reinforcement learning visualization"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={TrendingUp}
+              description="DQN agent for CartPole-v1 with modular pipeline and reward visualization using Stable-Baselines3, Gymnasium, and PyTorch."
+              href="https://github.com/NihaallX/Reinforcement-Learning"
+              cta="View Code"
+            />
 
-              <BentoCard
-                name="RateMyProf India"
-                className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5"
-                background={
-                  <Image
-                    src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=800&fit=crop"
-                    alt="University education"
-                    fill
-                    className="absolute inset-0 object-cover opacity-60"
-                  />
-                }
-                Icon={User}
-                description="A platform where students can rate and review professors across Indian colleges. Provides transparent insights through ratings on teaching quality, clarity, and overall experience with search, filters, and clean UI."
-                href="https://ratemyprof.me"
-                cta="Visit Site"
-              />
-            </BentoGrid>
+            <BentoCard
+              name="RateMyProf India"
+              className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=800&fit=crop"
+                  alt="University education"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={User}
+              description="A platform where students can rate and review professors across Indian colleges. Provides transparent insights through ratings on teaching quality, clarity, and overall experience with search, filters, and clean UI."
+              href="https://ratemyprof.me"
+              cta="Visit Site"
+            />
+          </BentoGrid>
         </div>
       </section>
 
