@@ -61,10 +61,9 @@ const BentoCard = ({
       borderWidth={2}
     />
     <div>{background}</div>
-    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-2 p-6 transition-all duration-300 group-hover:-translate-y-10">
+    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-2 p-6 transition-all duration-300">
       <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
-        <Icon className="h-12 w-12 origin-left transform-gpu text-white mb-3 transition-all duration-300 ease-in-out group-hover:scale-75" />
+        <Icon className="h-12 w-12 origin-left transform-gpu text-white mb-3" />
         <h3 className="text-2xl font-bold text-white mb-2">
           {name}
         </h3>
@@ -74,7 +73,7 @@ const BentoCard = ({
 
     <div
       className={cn(
-        "pointer-events-auto absolute bottom-0 flex w-full flex-row items-center p-6 transition-all duration-300 z-20",
+        "pointer-events-auto absolute bottom-0 flex w-full flex-row items-center p-6 z-20",
       )}
     >
       <Button variant="ghost" asChild size="sm" className="bg-white/90 hover:bg-white text-black font-semibold backdrop-blur-sm shadow-lg">
