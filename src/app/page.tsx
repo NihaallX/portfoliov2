@@ -175,10 +175,10 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent pb-1">Projects</h2>
           <p className="text-center text-foreground/60 mb-12 max-w-2xl mx-auto text-lg">Transforming ideas into intelligent solutions</p>
-          <BentoGrid className="lg:grid-rows-3">
+          <BentoGrid className="lg:grid-rows-4">
             <BentoCard
               name="Moodify"
-              className="lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3"
+              className="lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:col-end-3"
               background={
                 <Image
                   src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&h=800&fit=crop"
@@ -193,6 +193,23 @@ export default function Page() {
               cta="Try Moodify"
             />
             
+            <BentoCard
+              name="DateHelp"
+              className="lg:row-start-3 lg:row-end-5 lg:col-start-2 lg:col-end-3"
+              background={
+                <Image
+                  src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=800&fit=crop"
+                  alt="Dating app interface"
+                  fill
+                  className="absolute inset-0 object-cover opacity-60"
+                />
+              }
+              Icon={Heart}
+              description="AI-powered dating profile optimization tool. Get data-driven insights to improve your matches."
+              href="https://datehelp.tech"
+              cta="View Details"
+            />
+
             <BentoCard
               name="HouseGPT"
               className="lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
@@ -212,7 +229,7 @@ export default function Page() {
             
             <BentoCard
               name="CartPole RL Agent"
-              className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4"
+              className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5"
               background={
                 <Image
                   src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=800&fit=crop"
@@ -229,7 +246,7 @@ export default function Page() {
             
             <BentoCard
               name="RateMyProf India"
-              className="lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-4"
+              className="lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-5"
               background={
                 <Image
                   src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=800&fit=crop"
